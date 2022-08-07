@@ -1,0 +1,148 @@
+int rojo = 8;
+int amarillo = 9;
+int verde = 10;
+int rojo1 = 11;
+int amarillo1 = 7;
+int verde1 = 6;
+//1 = digitalWrite(A0, HIGH);
+//    digitalWrite(3, HIGH);
+//2 = digitalWrite(A1, HIGH);
+//    digitalWrite(A0, HIGH);
+//    digitalWrite(A3, HIGH);
+//    digitalWrite(5, HIGH);
+//    digitalWrite(4, HIGH);
+//3 = digitalWrite(A0, HIGH);
+//digitalWrite(A1, HIGH);
+//digitalWrite(A3, HIGH);
+//digitalWrite(3, HIGH);
+//digitalWrite(4, HIGH);
+
+         
+
+void setup (){
+   pinMode(A0, OUTPUT);
+   pinMode(A1, OUTPUT);
+   pinMode(A2, OUTPUT);
+   pinMode(A3, OUTPUT);
+   pinMode(A4, OUTPUT);
+   pinMode(A5, OUTPUT);
+   pinMode(3, OUTPUT);
+   pinMode(4, OUTPUT);
+   pinMode(5, OUTPUT);
+   pinMode(8, OUTPUT);
+   pinMode(9, OUTPUT);
+   pinMode(10, OUTPUT);
+   pinMode(11, OUTPUT);
+   pinMode(7, OUTPUT);
+   pinMode(6, OUTPUT);
+}
+void loop(){
+  digitalWrite(rojo1, LOW);
+  digitalWrite(verde1, HIGH);
+  digitalWrite(amarillo1, LOW);
+  digitalWrite(rojo, HIGH);///////////////////////////Pare
+  digitalWrite(amarillo, LOW);
+  digitalWrite(verde, LOW);
+  digitalWrite(A0, HIGH);//display en 3
+  digitalWrite(A1, HIGH);
+  digitalWrite(A3, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  delay(1000);
+  digitalWrite(A0, LOW);//apaga 3
+  digitalWrite(A1, LOW);
+  digitalWrite(A3, LOW);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(A1, HIGH); //prende 2
+  digitalWrite(A0, HIGH);
+  digitalWrite(A3, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(4, HIGH);
+  delay(1000);
+  digitalWrite(A1, LOW); //apaga 2
+  digitalWrite(A0, LOW);
+  digitalWrite(A3, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(A0, HIGH);//prende 1
+  digitalWrite(3, HIGH);
+  delay(1000);
+  digitalWrite(A0, LOW); //apaga 1
+  digitalWrite(3, LOW);
+  digitalWrite(A1, HIGH); //prende 2
+  digitalWrite(A0, HIGH);
+  digitalWrite(A3, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(rojo, LOW);//////////////////////////AMARILLO
+  digitalWrite(amarillo, HIGH);
+  digitalWrite(rojo1, LOW);
+  digitalWrite(verde1, LOW);
+  digitalWrite(amarillo1, HIGH);
+  delay(1000);
+  digitalWrite(A1, LOW); //apaga 2
+  digitalWrite(A0, LOW);
+  digitalWrite(A3, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(A0, HIGH);//prende 1
+  digitalWrite(3, HIGH);
+  delay(1000);
+  digitalWrite(A0, LOW); //apaga 1
+  digitalWrite(3, LOW);
+  digitalWrite(rojo1, HIGH);
+  digitalWrite(verde1, LOW);
+  digitalWrite(amarillo1, LOW);
+  digitalWrite(rojo, LOW);
+  digitalWrite(amarillo, LOW);
+  digitalWrite(verde, HIGH);///////////////////////////prend vrde
+  digitalWrite(A0, HIGH);//display en 3
+  digitalWrite(A1, HIGH);
+  digitalWrite(A3, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  delay(1000);
+  digitalWrite(A0, LOW);//apaga 3
+  digitalWrite(A1, LOW);
+  digitalWrite(A3, LOW);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(A1, HIGH); //prende 2
+  digitalWrite(A0, HIGH);
+  digitalWrite(A3, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(4, HIGH);
+  delay(1000);
+  digitalWrite(A1, LOW); //apaga 2
+  digitalWrite(A0, LOW);
+  digitalWrite(A3, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(A0, HIGH);//prende 1
+  digitalWrite(3, HIGH);
+  delay(1000);
+  digitalWrite(rojo, LOW);//////////////////////////AMARILLO
+  digitalWrite(amarillo, HIGH);
+  digitalWrite(rojo1, LOW);
+  digitalWrite(verde1, LOW);
+  digitalWrite(amarillo1, HIGH);
+  digitalWrite(A0, LOW); //apaga 1
+  digitalWrite(3, LOW);
+  digitalWrite(A1, HIGH); //prende 2
+  digitalWrite(A0, HIGH);
+  digitalWrite(A3, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(4, HIGH);
+  delay(1000);
+  digitalWrite(A1, LOW); //apaga 2
+  digitalWrite(A0, LOW);
+  digitalWrite(A3, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(A0, HIGH);//prende 1
+  digitalWrite(3, HIGH);
+  delay(1000);
+  digitalWrite(A0, LOW); //apaga 1
+  digitalWrite(3, HIGH); 
+}
